@@ -1,0 +1,9 @@
+.span {
+  display: block;
+  &.captitalize {
+    text-transform: lowercase;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

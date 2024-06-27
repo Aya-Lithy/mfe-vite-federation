@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "workspaces": [
+    "host",
+    "remote"
+  ],
+  "scripts": {
+    "build:remote": "yarn workspace remote build",
+    "preview:remote": "yarn workspace remote preview",
+    "dev:remote": "yarn workspace remote dev",
+    "build:host": "yarn workspace host build",
+    "preview:host": "yarn workspace host preview",
+    "dev:host": "yarn workspace host dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn preview:remote\"  \"yarn dev:host\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "dotenv": "^16.4.5"
+  }
+}

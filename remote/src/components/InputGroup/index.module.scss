@@ -1,0 +1,38 @@
+.group {
+  .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    &.captitalize {
+      text-transform: lowercase;
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    .transparent {
+      opacity: 0;
+    }
+  }
+
+  .field,
+  input {
+    font-size: 0.75rem;
+    color: #202020;
+  }
+
+  input[type="checkbox"] + label {
+    margin-bottom: 0px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #464646;
+  }
+}
+
+.desc {
+  color: var(--base-500);
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  margin-bottom: 33px;
+}
